@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <!--
+        Added the constraints for entity ACCENTIDADDF.
+    -->
+    <changeSet id="20200408113300-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="identidadfk1_id"
+                                 baseTableName="accentidaddf"
+                                 constraintName="accentidaddf_identidadfk1_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="accentidaddvt"/>
+
+        <addForeignKeyConstraint baseColumnNames="identidadfk2_id"
+                                 baseTableName="accentidaddf"
+                                 constraintName="accentidaddf_identidadfk2_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="accentidadper"/>
+
+    </changeSet>
+</databaseChangeLog>
