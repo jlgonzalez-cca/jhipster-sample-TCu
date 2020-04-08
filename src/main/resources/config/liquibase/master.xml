@@ -14,6 +14,12 @@
     <property name="uuidType" value="uuid" dbms="h2, oracle"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200408114800_added_entity_ACCENTIDADDF.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200408114900_added_entity_ACCENTIDADDVT.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200408115000_added_entity_ACCENTIDADPER.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200408115100_added_entity_DCCCARGOENT.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20200408114900_added_entity_constraints_ACCENTIDADDVT.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200408115000_added_entity_constraints_ACCENTIDADPER.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>
