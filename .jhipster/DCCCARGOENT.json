@@ -1,0 +1,33 @@
+{
+    "name": "DCCCARGOENT",
+    "fields": [
+        {
+            "fieldName": "iDCARGO",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "nOMBRE",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "aCCENTIDADPER",
+            "otherEntityRelationshipName": "iDCARGOFK3",
+            "relationshipName": "aCCENTIDADPER"
+        }
+    ],
+    "changelogDate": "20200408115100",
+    "javadoc": "not an ignored comment",
+    "entityTableName": "dcccargoent",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
